@@ -9,6 +9,7 @@
         "moov_perf": "1.2.5",
         "moov_rewriter": "^4.0.1",
         "moov_stdlib": "^2.6.33",
+        "react-search-box": "^2.0.1",
         "react-storefront-middleware": "^6.16.0"
     },
     "devDependencies": {

@@ -66,6 +66,7 @@ export default class App extends Component {
               Cart: universal(import('./cart/Cart')),
               Checkout: universal(import('./checkout/Checkout')),
               Error: universal(import('./ErrorPage')),
+              About: universal(import('./about/About')),
               Offline
             })}
           />

@@ -6,7 +6,7 @@ import FindStore from '@material-ui/icons/LocationOn'
 import Search from '@material-ui/icons/Search'
 import Link from 'react-storefront/Link'
 import { withStyles } from '@material-ui/core/styles'
-import Logo from '../assets/react-storefront-logo.svg'
+import Logo from '../assets/logo-white-with-icon.svg'
 import CartButton from 'react-storefront/CartButton'
 import HeaderLogo from 'react-storefront/HeaderLogo'
 import Hidden from '@material-ui/core/Hidden'
@@ -65,10 +65,6 @@ export default class Header extends Component {
       </Link>
     )
 
-    const promo = `https://placehold.it/750x128/81d4fa/fff?text=${encodeURIComponent(
-      '25% OFF EVERYTHING'
-    )}`
-
     return (
       <div>
         <AppBar classes={{ root: classes.root }} menuAlign="right" menuIconProps={{ label: false }}>
@@ -98,12 +94,6 @@ export default class Header extends Component {
           </Hidden>
           <CartButton classes={{ icon: classes.icon }} />
         </AppBar>
-        <PromoBanner
-          className={classes.promo}
-          src={promo}
-          style={{ height: '64px' }}
-          imgProps={{ quality: 50 }}
-        />
       </div>
     )
   }

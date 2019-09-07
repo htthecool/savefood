@@ -44,6 +44,7 @@ export default new Router()
   .get('/cart/add-from-amp.json', fromServer('./cart/add-from-amp-handler'))
   .get('/checkout', fromClient({ page: 'Checkout' }), fromServer('./checkout/checkout-handler'))
   .get('/search/suggest', fromServer('./search/suggest-handler'))
+  .get('/store-selection', fromClient({ page: 'About' }), fromServer('./about/about-handler'))
   .get(
     '/search',
     // Note: Search results and subcategory views are often the same.  In practice you may need to implement
