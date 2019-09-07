@@ -10,7 +10,6 @@ import Grid from '@material-ui/core/Grid'
 export default class Home extends Component {
   render() {
     const { app } = this.props
-
     return (
       <Container>
         <Row>
@@ -20,7 +19,7 @@ export default class Home extends Component {
         <Row>Stephan</Row>
         <Row>Richard</Row>
         <Row>Matthius</Row>
-        <Grid container spacing={3}>
+        <Grid container spacing={8}>
           <Grid item xs={12}>
             <p>One</p>
           </Grid>

@@ -46,6 +46,11 @@ export default new Router()
   .get('/search/suggest', fromServer('./search/suggest-handler'))
   .get('/store-selection', fromClient({ page: 'About' }), fromServer('./about/about-handler'))
   .get(
+    '/confirmation',
+    fromClient({ page: 'Confirmation' }),
+    fromServer('./confirmation/confirmation-handler')
+  )
+  .get(
     '/search',
     // Note: Search results and subcategory views are often the same.  In practice you may need to implement
     // a different handler or view for search results.  For simplicity we just reuse the subcategory view and
