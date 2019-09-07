@@ -10,6 +10,8 @@ import Grid from '@material-ui/core/Grid'
 export default class Home extends Component {
   render() {
     const { app } = this.props
+    const items = require('../subcategory/stock.json')
+    console.log(items)
 
     return (
       <Container>
@@ -32,6 +34,7 @@ export default class Home extends Component {
           </Grid>
         </Grid>
       </Container>
+      
     )
   }
 }

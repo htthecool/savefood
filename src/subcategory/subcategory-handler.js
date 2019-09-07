@@ -88,7 +88,7 @@ export function createProducts(
   page = 0,
   { categoryId = '1', subcategoryId = '1' } = {}
 ) {
-  const items = []
+  const items = require('./stock.json')
 
   const total =
     filters.length === 0
@@ -99,17 +99,17 @@ export function createProducts(
 
   const count = Math.min(total, pageSize)
 
-  for (let i = 1; i <= count; i++) {
-    const id = page * count + i
-    items.push({
-      id: id.toString(),
-      url: `/p/${id}?c=${encodeURIComponent(categoryId)}&s=${encodeURIComponent(subcategoryId)}`,
-      name: `Product ${id}`,
-      basePrice: 99.99,
-      rating: i % 5,
-      thumbnail: `https://via.placeholder.com/256x256?text=${encodeURIComponent(`Product ${id}`)}`
-    })
-  }
+  // for (let i = 1; i <= count; i++) {
+  //   const id = page * count + i
+  //   items.push({
+  //     id: id.toString(),
+  //     url: `/p/${id}?c=${encodeURIComponent(categoryId)}&s=${encodeURIComponent(subcategoryId)}`,
+  //     name: `Product ${id}`,
+  //     basePrice: 99.99,
+  //     rating: i % 5,
+  //     thumbnail: `https://via.placeholder.com/256x256?text=${encodeURIComponent(`Product ${id}`)}`
+  //   })
+  // }
 
   return { items, total }
 }

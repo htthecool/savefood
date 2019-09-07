@@ -50,7 +50,7 @@ export default class ProductItem extends Component {
 
   render() {
     const { index, product, classes } = this.props
-
+    console.log(product)
     return (
       <div id={`item-${index}`} className={classes.root}>
         <Track event="productClicked" product={product}>
@@ -62,12 +62,12 @@ export default class ProductItem extends Component {
                   lazy={index >= 4 && index < 10}
                   aspectRatio={100}
                   alt="product"
-                  src={product.thumbnail}
+                  src={'/Users/matthiasbachmann/hack/savefood/allen.png'}
                 />
               </div>
               <div className={classes.info}>
                 <Typography variant="subtitle1" className={classes.name}>
-                  {product.name}
+                  {product.Description}
                 </Typography>
                 <Rating product={product} className={classes.rating} />
                 <Typography className={classes.price}>{price(product.price)}</Typography>
