@@ -5,6 +5,7 @@ import CategoryModel from './category/CategoryModel'
 import SubcategoryModel from './subcategory/SubcategoryModel'
 import ProductModel from './product/ProductModel'
 import AboutModel from './about/AboutModel'
+import ConfirmationModel from './confirmation/ConfirmationModel'
 
 const AppModel = types.compose(
   AppModelBase,
@@ -14,7 +15,8 @@ const AppModel = types.compose(
     category: types.maybeNull(CategoryModel),
     subcategory: types.maybeNull(SubcategoryModel),
     product: types.maybeNull(ProductModel),
-    about: types.maybeNull(AboutModel)
+    about: types.maybeNull(AboutModel),
+    confirmation: types.maybeNull(ConfirmationModel)
   })
 )
 

@@ -15,9 +15,13 @@ import PromoBanner from 'react-storefront/PromoBanner'
 import SearchField from 'react-storefront/SearchField'
 
 @withStyles(theme => ({
+  bbAppBar: {
+    backgroundColor: '#37A289'
+  },
   root: {
     height: '64px',
-    position: 'relative'
+    position: 'relative',
+    backgroundColor: '#37A289'
   },
 
   buttonLabel: {

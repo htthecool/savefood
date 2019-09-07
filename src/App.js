@@ -17,8 +17,9 @@ import targets from './analytics'
     body: {
       margin: '0',
       padding: '0',
-      fontFamily: theme.typography.fontFamily,
-      fontSize: theme.typography.fontSize
+      fontFamily: theme.fontFamily,
+      fontSize: theme.typography.fontSize,
+      backgroundColor: theme.palette.primary.main
     },
     a: {
       textDecoration: 'underline'
@@ -67,6 +68,7 @@ export default class App extends Component {
               Checkout: universal(import('./checkout/Checkout')),
               Error: universal(import('./ErrorPage')),
               About: universal(import('./about/About')),
+              Confirmation: universal(import('./confirmation/Confirmation')),
               Offline
             })}
           />

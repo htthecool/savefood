@@ -5,10 +5,11 @@ const theme = createTheme({
   typography: {
     useNextVariants: true
   },
-  fontFamily: 'Roboto',
+  fontFamily: 'Nunito Sans',
   palette: {
+    primary: { main: '#39A78E' },
     secondary: {
-      main: '#39A78E',
+      main: '#363636',
       light: red[600],
       dark: red[800],
       contrastText: '#fff'
